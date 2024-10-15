@@ -7,4 +7,11 @@ export default defineConfig({
     port: 8000,
   },
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
+  },
 });
